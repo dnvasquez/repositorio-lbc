@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="layout">
       <aside className="sidebar">
-        <h2>LBC Panel</h2>
+        <h2>Repositorio de datos</h2>
         <button className={view==='vegetation' ? 'active' : ''} onClick={() => setView('vegetation')}>Formaciones Vegetacionales</button>
         <button className={view==='climate' ? 'active' : ''} onClick={() => setView('climate')}>Regiones Climáticas</button>
       </aside>
