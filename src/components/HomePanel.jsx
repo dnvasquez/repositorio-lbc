@@ -1,37 +1,48 @@
-import React from 'react';
-import '../styles/home.css';
+import React, { useState } from 'react';
+import ClimatePanel from './components/ClimatePanel';
+import VegetationPanel from './components/VegetationPanel';
+import MacrozonaPanel from './components/MacrozonaPanel';
+import EdaphicPanel from './components/EdaphicPanel';
+import HomePanel from './components/HomePanel';
+import AgroclimaticPanel from './components/AgroclimaticPanel';
 
-const HomePanel = () => {
+const App = () => {
+  const [view, setView] = useState('home');
+
+  const renderPanel = () => {
+    switch (view) {
+      case 'vegetation':
+        return <VegetationPanel />;
+      case 'climate':
+        return <ClimatePanel />;
+      case 'macrozona':
+        return <MacrozonaPanel />;
+      case 'edaphic':
+        return <EdaphicPanel />;
+      case 'agroclimatic':
+        return <AgroclimaticPanel />;
+      case 'home':
+      default:
+        return <HomePanel />;
+    }
+  };
+
   return (
-    <div className="app-container">
-      <div className="card">
-        <h1 className="title">Repositorio de Datos de LBC Consultores</h1>
-        <p className="subtitle">
-          Una herramienta de consulta
-        </p>
-
-        <div className="description-box">
-          <p className="description-text">
-            Este repositorio centraliza información geoespacial y ambiental de Chile, proporcionando un acceso rápido y sencillo a datos clave para la redacción de informes.
-          </p>
-          <p className="description-text">
-            Utiliza el menú lateral para navegar por las diferentes secciones:
-          </p>
-          <ul>
-            <li><strong>Formaciones Vegetacionales:</strong> Basado en Gajardo (1994).</li>
-            <li><strong>Regiones Climáticas:</strong> Basado en Sarricolea et al. (2017).</li>
-            <li><strong>Zonas Edáficas:</strong> Basado en Luzio (2009).</li>
-            <li><strong>Macrozonas y subzonas Paisajísticas:</strong> Basado en MEC Consultores (2018).</li>
-          </ul>
-        </div>
-        
-        <div className="footer">
-          <p>© 2025 LBC Consultores Ambientales</p>
-          <p>Autor: david.vasquez@lbconservation.org</p>
-        </div>
-      </div>
+    <div className="layout">
+      <aside className="sidebar">
+        <h2>Repositorio de datos</h2>
+        <button className={view==='home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
+        <button className={view==='vegetation' ? 'active' : ''} onClick={() => setView('vegetation')}>Formaciones Vegetacionales</button>
+        <button className={view==='climate' ? 'active' : ''} onClick={() => setView('climate')}>Regiones Climáticas</button>
+        <button className={view==='agroclimatic' ? 'active' : ''} onClick={() => setView('agroclimatic')}>Zonas Agroclimáticas</button>
+        <button className={view==='edaphic' ? 'active' : ''} onClick={() => setView('edaphic')}>Zonas Edáficas</button>
+        <button className={view==='macrozona' ? 'active' : ''} onClick={() => setView('macrozona')}>Macrozonas Paisajísticas</button>
+      </aside>
+      <main className="content">
+        {renderPanel()}
+      </main>
     </div>
   );
 };
 
-export default HomePanel;
+export default App;
