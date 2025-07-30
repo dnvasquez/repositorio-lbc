@@ -70,7 +70,7 @@ const ClimatePanel = () => {
               Clasificación Climática de Chile Continental
             </h1>
             <p className="subtitle">
-              Según Sarricolea et al. 2017
+              Basado en Sarricolea et al. (2017)
             </p>
             
             <div>
