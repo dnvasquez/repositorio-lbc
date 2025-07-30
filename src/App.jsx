@@ -3,24 +3,39 @@ import ClimatePanel from './components/ClimatePanel';
 import VegetationPanel from './components/VegetationPanel';
 import MacrozonaPanel from './components/MacrozonaPanel';
 import EdaphicPanel from './components/EdaphicPanel';
+import HomePanel from './components/HomePanel';
 
 const App = () => {
-  const [view, setView] = useState('vegetation');
+  const [view, setView] = useState('home');
+
+  const renderPanel = () => {
+    switch (view) {
+      case 'vegetation':
+        return <VegetationPanel />;
+      case 'climate':
+        return <ClimatePanel />;
+      case 'macrozona':
+        return <MacrozonaPanel />;
+      case 'edaphic':
+        return <EdaphicPanel />;
+      case 'home':
+      default:
+        return <HomePanel />;
+    }
+  };
 
   return (
     <div className="layout">
       <aside className="sidebar">
         <h2>Repositorio de datos</h2>
+        <button className={view==='home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
         <button className={view==='vegetation' ? 'active' : ''} onClick={() => setView('vegetation')}>Formaciones Vegetacionales</button>
         <button className={view==='climate' ? 'active' : ''} onClick={() => setView('climate')}>Regiones Climáticas</button>
-        <button className={view==='macrozona' ? 'active' : ''} onClick={() => setView('macrozona')}>Macro y subzonas de paisaje</button>
         <button className={view==='edaphic' ? 'active' : ''} onClick={() => setView('edaphic')}>Zonas Edáficas</button>
+        <button className={view==='macrozona' ? 'active' : ''} onClick={() => setView('macrozona')}>Macrozonas y subzonas Paisajísticas</button>
       </aside>
       <main className="content">
-        {view === 'vegetation' && <VegetationPanel />}
-        {view === 'climate' && <ClimatePanel />}
-        {view === 'macrozona' && <MacrozonaPanel />}
-        {view === 'edaphic' && <EdaphicPanel />}
+        {renderPanel()}
       </main>
     </div>
   );
