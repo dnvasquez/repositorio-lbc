@@ -13,7 +13,7 @@ const App = () => {
         <h2>Repositorio de datos</h2>
         <button className={view==='vegetation' ? 'active' : ''} onClick={() => setView('vegetation')}>Formaciones Vegetacionales</button>
         <button className={view==='climate' ? 'active' : ''} onClick={() => setView('climate')}>Regiones Climáticas</button>
-        <button className={view==='macrozona' ? 'active' : ''} onClick={() => setView('macrozona')}>Macrozonas Paisajísticas</button>
+        <button className={view==='macrozona' ? 'active' : ''} onClick={() => setView('macrozona')}>Macro y subzonas de paisaje</button>
         <button className={view==='edaphic' ? 'active' : ''} onClick={() => setView('edaphic')}>Zonas Edáficas</button>
       </aside>
       <main className="content">
