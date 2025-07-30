@@ -129,7 +129,7 @@ const EdaphicPanel = () => {
                     Zonas Edáficas de Chile
                 </h1>
                 <p className="subtitle">
-                    Basado en "Suelos de Chile" de Luzio W. (2010)
+                    Basado en Luzio W. (2010)
                 </p>
                 
                 <div className="select-container">
