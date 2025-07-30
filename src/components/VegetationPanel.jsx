@@ -628,7 +628,7 @@ const VegetationPanel = () => {
               Formaciones Vegetacionales de Chile
             </h1>
             <p className="subtitle">
-              Según Gajardo 1994
+              Basado en Gajardo (1994)
             </p>
             
             <div className="space-y-6">
