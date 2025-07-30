@@ -141,7 +141,7 @@ const MacrozonaPanel = () => {
                     Macrozonas Paisajísticas de Chile
                 </h1>
                 <p className="subtitle">
-                    Según clasificación paisajística del SEIA
+                    Basado en MEC Consultores (2018)
                 </p>
                 
                 <div className="select-container">
