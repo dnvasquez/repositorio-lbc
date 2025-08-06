@@ -33,49 +33,30 @@ const App = () => {
       <aside className="sidebar">
         <h2>Repositorio de datos</h2>
         <button className={view==='home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
-        <div className="relative w-full">
-  {/* El <select> se estira para llenar el contenedor */}
+        // dnvasquez/repositorio-lbc/repositorio-lbc-27ae4cf79022378ed260c20861327e035fa42d44/src/App.jsx
+<aside className="sidebar">
+  <h2>Repositorio de datos</h2>
+  <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
+  
   <select
     value={view}
-    onChange={(e) => setView(e.target.value)}
-    // Clases para que se vea como un botón + ocultar la flecha nativa
-    className="
-      w-full 
-      p-3 
-      text-left 
-      bg-gray-700 
-      text-white 
-      rounded-lg 
-      hover:bg-gray-600 
-      focus:outline-none 
-      focus:ring-2 
-      focus:ring-blue-500 
-      transition-colors 
-      appearance-none 
-      cursor-pointer
-    "
+    onChange={(e) => {
+      // Si el valor no es 'home', se considera una vista del select
+      if (e.target.value !== 'home') {
+        setView(e.target.value);
+      }
+    }}
+    // Aplica la nueva clase y la clase 'active' si la vista no es 'home'
+    className={`sidebar-select ${view !== 'home' ? 'active' : ''}`}
   >
+    {/* Opción deshabilitada para actuar como placeholder si es necesario */}
+    <option value="home" disabled>Selecciona una categoría...</option>
     <option value="vegetation">Formaciones Vegetacionales</option>
     <option value="climate">Regiones Climáticas</option>
     <option value="agroclimatic">Zonas Agroclimáticas</option>
     <option value="edaphic">Zonas Edáficas</option>
     <option value="macrozona">Macrozonas Paisajísticas</option>
   </select>
-
-  {/* Contenedor para el ícono de la flecha (SVG) */}
-  <div className="
-    absolute 
-    inset-y-0 
-    right-0 
-    flex 
-    items-center 
-    px-3 
-    pointer-events-none
-  ">
-    <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </div>
 </div>
         
         <div className="sidebar-separator"></div>
