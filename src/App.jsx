@@ -31,10 +31,10 @@ const App = () => {
   return (
     <div className="layout">
       <aside className="sidebar">
-        <h2>Repositorio de datos</h2>
+        <h2>Panel de Navegación</h2>
         <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
         
-        <h2>Sección de informe</h2>
+        <h2>Repositorio de datos</h2>
         
         <select
           value={view}
@@ -53,7 +53,7 @@ const App = () => {
           <option value="macrozona">Macrozonas Paisajísticas</option>
         </select>
 
-        <h2>Enlaces externos</h2>
+        <h2>Centro de Aplicaciones</h2>
        
         <div className="sidebar-section">
           <h2>KWEN Apps</h2>
