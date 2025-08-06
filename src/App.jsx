@@ -32,32 +32,24 @@ const App = () => {
     <div className="layout">
       <aside className="sidebar">
         <h2>Repositorio de datos</h2>
-        <button className={view==='home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
-        // dnvasquez/repositorio-lbc/repositorio-lbc-27ae4cf79022378ed260c20861327e035fa42d44/src/App.jsx
-<aside className="sidebar">
-  <h2>Repositorio de datos</h2>
-  <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
-  
-  <select
-    value={view}
-    onChange={(e) => {
-      // Si el valor no es 'home', se considera una vista del select
-      if (e.target.value !== 'home') {
-        setView(e.target.value);
-      }
-    }}
-    // Aplica la nueva clase y la clase 'active' si la vista no es 'home'
-    className={`sidebar-select ${view !== 'home' ? 'active' : ''}`}
-  >
-    {/* Opción deshabilitada para actuar como placeholder si es necesario */}
-    <option value="home" disabled>Selecciona una categoría...</option>
-    <option value="vegetation">Formaciones Vegetacionales</option>
-    <option value="climate">Regiones Climáticas</option>
-    <option value="agroclimatic">Zonas Agroclimáticas</option>
-    <option value="edaphic">Zonas Edáficas</option>
-    <option value="macrozona">Macrozonas Paisajísticas</option>
-  </select>
-</div>
+        <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
+        
+        <select
+          value={view}
+          onChange={(e) => {
+            if (e.target.value !== 'home') {
+              setView(e.target.value);
+            }
+          }}
+          className={`sidebar-select ${view !== 'home' ? 'active' : ''}`}
+        >
+          <option value="home" disabled>Selecciona una categoría...</option>
+          <option value="vegetation">Formaciones Vegetacionales</option>
+          <option value="climate">Regiones Climáticas</option>
+          <option value="agroclimatic">Zonas Agroclimáticas</option>
+          <option value="edaphic">Zonas Edáficas</option>
+          <option value="macrozona">Macrozonas Paisajísticas</option>
+        </select>
         
         <div className="sidebar-separator"></div>
 
