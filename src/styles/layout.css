@@ -114,6 +114,9 @@ body {
 
 .content {
   flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
 
 .sidebar-select {
   /* Apariencia y Ocultar flecha nativa */
@@ -148,7 +151,4 @@ body {
 .sidebar-select.active {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.18);
-}
-  overflow-y: auto;
-  padding: 1rem;
 }
