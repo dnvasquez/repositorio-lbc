@@ -1,4 +1,4 @@
-/* dnvasquez/repositorio-lbc/repositorio-lbc-bfead794c41105587190b80b8f2e32f7274b5fd0/src/styles/layout.css */
+/* dnvasquez/repositorio-lbc/repositorio-lbc-ac3608d3abbf348a38d7de449da6e78542511611/src/styles/layout.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
@@ -151,4 +151,10 @@ body {
 .sidebar-select.active {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Estilo para las opciones del menú desplegable */
+.sidebar-select option {
+  background: var(--sidebar-hover);
+  color: white;
 }
