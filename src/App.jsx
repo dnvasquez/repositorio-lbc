@@ -32,12 +32,21 @@ const App = () => {
     <div className="layout">
       <aside className="sidebar">
         <h2>Repositorio de datos</h2>
-        <button className={view==='home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
-        <button className={view==='vegetation' ? 'active' : ''} onClick={() => setView('vegetation')}>Formaciones Vegetacionales</button>
-        <button className={view==='climate' ? 'active' : ''} onClick={() => setView('climate')}>Regiones Climáticas</button>
-        <button className={view==='agroclimatic' ? 'active' : ''} onClick={() => setView('agroclimatic')}>Zonas Agroclimáticas</button>
-        <button className={view==='edaphic' ? 'active' : ''} onClick={() => setView('edaphic')}>Zonas Edáficas</button>
-        <button className={view==='macrozona' ? 'active' : ''} onClick={() => setView('macrozona')}>Macrozonas Paisajísticas</button>
+        <select
+  // El valor del select está sincronizado con el estado 'view'
+  value={view}
+  // La función setView se llama cada vez que se elige una nueva opción
+  onChange={(e) => setView(e.target.value)}
+  // Clases para darle un estilo similar a un input, puedes personalizarlas
+  className="p-2 border border-gray-300 rounded-md bg-white w-full md:w-auto"
+>
+  <option value="home">Inicio</option>
+  <option value="vegetation">Formaciones Vegetacionales</option>
+  <option value="climate">Regiones Climáticas</option>
+  <option value="agroclimatic">Zonas Agroclimáticas</option>
+  <option value="edaphic">Zonas Edáficas</option>
+  <option value="macrozona">Macrozonas Paisajísticas</option>
+</select>
         
         <div className="sidebar-separator"></div>
 
@@ -64,7 +73,7 @@ const App = () => {
           <div className="sidebar-separator"></div>
           <h4>Suelo</h4>
           <a href="https://www.appsheet.com/start/5a5af7fd-d911-4673-a85a-533ede97bc2d#appName=KWENsuelo-337919552&page=gallery&sort=%5B%7B%22Column%22%3A%22ID+MENU%22%2C%22Order%22%3A%22Ascending%22%7D%5D&table=Menu&view=Menu" target="_blank" rel="noopener noreferrer" className="sidebar-link">
-            KWEN Suelo
+            Centro de descargas
           </a>
           <div className="sidebar-separator"></div>
           <h2>GEE Apps</h2>
