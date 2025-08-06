@@ -42,7 +42,6 @@ const App = () => {
         {/* LOGO AGREGADO AQUÍ */}
         <img src="/LCB-Horizontal_blanco.png" alt="Logo LBC Consultores" className="sidebar-logo" />
         
-        <h2>Panel de Navegación</h2>
         <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
         
         <div className="sidebar-separator"></div>
