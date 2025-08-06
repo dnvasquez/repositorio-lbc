@@ -1,3 +1,4 @@
+/* dnvasquez/repositorio-lbc/repositorio-lbc-bfead794c41105587190b80b8f2e32f7274b5fd0/src/styles/layout.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
@@ -59,6 +60,30 @@ body {
 .sidebar button.active {
   background: rgba(255,255,255,.08);
   border-color: rgba(255,255,255,.18);
+}
+
+.sidebar-separator {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 1rem 0;
+}
+
+.sidebar-link {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.08);
+  color: white;
+  padding: .75rem .9rem;
+  text-align: left;
+  font-size: .95rem;
+  cursor: pointer;
+  border-radius: .5rem;
+  transition: background .2s ease;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar-link:hover {
+  background: var(--sidebar-hover);
 }
 
 .content {
