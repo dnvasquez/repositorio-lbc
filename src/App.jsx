@@ -43,7 +43,7 @@ const App = () => {
 
         <div className="sidebar-section">
           <h2>KWEN apps</h2>
-          <h3>Fauna</h3>
+          <h1>Fauna</h1>
           <a href="https://www.appsheet.com/start/82a7a1d0-aa58-4f81-988f-4f85eb9b4553#appName=KWENfauna-337919552-24-10-08&page=dashboard&table=DarwinCore&view=Centro+de+descargas" target="_blank" rel="noopener noreferrer" className="sidebar-link">
             KWEN Fauna
           </a>
@@ -54,7 +54,7 @@ const App = () => {
             Fauna Potencial
           </a>
           <div className="sidebar-separator"></div>
-          <h3>Flora</h3>
+          <h1>Flora</h1>
           <a href="https://www.appsheet.com/start/b59a0549-b78b-4906-86b7-5f43823cd56c#appName=KWENflora-337919552-24-10-21&page=dashboard&table=Base+de+datos&view=Centro+de+descargas" target="_blank" rel="noopener noreferrer" className="sidebar-link">
             KWEN Flora
           </a>
@@ -62,7 +62,7 @@ const App = () => {
             Flora Cobertura
           </a>
           <div className="sidebar-separator"></div>
-          <h3>Suelo</h3>
+          <h1>Suelo</h1>
           <a href="https://www.appsheet.com/start/5a5af7fd-d911-4673-a85a-533ede97bc2d#appName=KWENsuelo-337919552&page=gallery&sort=%5B%7B%22Column%22%3A%22ID+MENU%22%2C%22Order%22%3A%22Ascending%22%7D%5D&table=Menu&view=Menu" target="_blank" rel="noopener noreferrer" className="sidebar-link">
             KWEN Suelo
           </a>
