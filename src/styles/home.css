@@ -1,3 +1,4 @@
+// dnvasquez/repositorio-lbc/repositorio-lbc-ac3608d3abbf348a38d7de449da6e78542511611/src/styles/home.css
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 .app-container {
@@ -50,6 +51,18 @@
 .description-box li {
     margin-bottom: 0.5rem;
 }
+
+/* Estilos para la lista anidada */
+.description-box ul ul {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem; /* Añade sangría */
+}
+
+.description-box ul ul li {
+  list-style-type: circle;
+  margin-bottom: 0.25rem;
+}
+
 
 .footer {
   border-top: 1px solid #e5e7eb;
