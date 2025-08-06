@@ -51,8 +51,7 @@ const App = () => {
           <option value="macrozona">Macrozonas Paisajísticas</option>
         </select>
         
-        <div className="sidebar-separator"></div>
-
+       
         <div className="sidebar-section">
           <h2>KWEN Apps</h2>
           <h4>Fauna</h4>
@@ -60,7 +59,7 @@ const App = () => {
             Centro de descargas
           </a>
           <a href="https://ge6y46-david-vasquez.shinyapps.io/KWEN-Fauna-Abundancia/" target="_blank" rel="noopener noreferrer" className="sidebar-link">
-            Fauna Abundancia
+            Abundancia de especies
           </a>
           <a href="https://ge6y46-david-vasquez.shinyapps.io/KWEN-Fauna-potencial/" target="_blank" rel="noopener noreferrer" className="sidebar-link">
             Fauna Potencial
@@ -71,7 +70,7 @@ const App = () => {
             Centro de descargas
           </a>
           <a href="https://ge6y46-david-vasquez.shinyapps.io/KWEN-Cobertura-flora/" target="_blank" rel="noopener noreferrer" className="sidebar-link">
-            Flora Cobertura
+            Cobertura relativa
           </a>
           <div className="sidebar-separator"></div>
           <h4>Suelo</h4>
