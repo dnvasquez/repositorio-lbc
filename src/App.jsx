@@ -43,7 +43,7 @@ const App = () => {
 
         <div className="sidebar-section">
           <h2>KWEN apps</h2>
-          <h1>Fauna</h1>
+          <h4>Fauna</h4>
           <a href="https://www.appsheet.com/start/82a7a1d0-aa58-4f81-988f-4f85eb9b4553#appName=KWENfauna-337919552-24-10-08&page=dashboard&table=DarwinCore&view=Centro+de+descargas" target="_blank" rel="noopener noreferrer" className="sidebar-link">
             KWEN Fauna
           </a>
