@@ -38,16 +38,18 @@ const App = () => {
         <button className={view==='agroclimatic' ? 'active' : ''} onClick={() => setView('agroclimatic')}>Zonas Agroclimáticas</button>
         <button className={view==='edaphic' ? 'active' : ''} onClick={() => setView('edaphic')}>Zonas Edáficas</button>
         <button className={view==='macrozona' ? 'active' : ''} onClick={() => setView('macrozona')}>Macrozonas Paisajísticas</button>
-
+        
         <div className="sidebar-separator"></div>
 
-        <h2>Aplicaciones LBC</h2>
-        <a href="https://lbc-evaluacion-ambiental.netlify.app/" target="_blank" rel="noopener noreferrer" className="sidebar-link">
-          Evaluación Ambiental
-        </a>
-        <a href="https://lbc-ley-humedales.netlify.app/" target="_blank" rel="noopener noreferrer" className="sidebar-link">
-          Ley de Humedales
-        </a>
+        <div className="sidebar-section">
+          <h2>Aplicaciones LBC</h2>
+          <a href="https://lbc-evaluacion-ambiental.netlify.app/" target="_blank" rel="noopener noreferrer" className="sidebar-link">
+            Evaluación Ambiental
+          </a>
+          <a href="https://lbc-ley-humedales.netlify.app/" target="_blank" rel="noopener noreferrer" className="sidebar-link">
+            Ley de Humedales
+          </a>
+        </div>
       </aside>
       <main className="content">
         {renderPanel()}
