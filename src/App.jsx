@@ -64,10 +64,11 @@ const App = () => {
         <div className="sidebar-separator"></div>
 
         <h2>Centro de Aplicaciones</h2>
+        <h4>KWEN Apps</h4>
         
         {/* Menú para KWEN Apps */}
         <select onChange={handleExternalLink} className="sidebar-select">
-          <option value="">KWEN Apps...</option>
+          <option value="">Seleccionar...</option>
           <optgroup label="Fauna">
             <option value="https://www.appsheet.com/start/82a7a1d0-aa58-4f81-988f-4f85eb9b4553#appName=KWENfauna-337919552-24-10-08&page=dashboard&table=DarwinCore&view=Centro+de+descargas">Centro de descargas</option>
             <option value="https://ge6y46-david-vasquez.shinyapps.io/KWEN-Fauna-Abundancia/">Abundancia de especies</option>
@@ -81,10 +82,10 @@ const App = () => {
             <option value="https://www.appsheet.com/start/5a5af7fd-d911-4673-a85a-533ede97bc2d#appName=KWENsuelo-337919552&page=gallery&sort=%5B%7B%22Column%22%3A%22ID+MENU%22%2C%22Order%22%3A%22Ascending%22%7D%5D&table=Menu&view=Menu">Centro de descargas</option>
           </optgroup>
         </select>
-
+        <h4>GEE Apps</h4>
         {/* Menú para GEE Apps */}
         <select onChange={handleExternalLink} className="sidebar-select">
-          <option value="">GEE Apps...</option>
+          <option value="">Seleccionar...</option>
           <option value="https://ee-dnvasque.projects.earthengine.app/view/dem-app">DEM App</option>
           <option value="https://ee-dnvasque.projects.earthengine.app/view/rgbimage-app">RGB App</option>
           <option value="https://ee-dnvasque.projects.earthengine.app/view/lcc-app2">LCC App</option>
