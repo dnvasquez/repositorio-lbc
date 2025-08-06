@@ -7,18 +7,18 @@ const HomePanel = () => {
       <div className="card">
         <h1 className="title">Portal de Herramientas y Datos LBC</h1>
         <p className="subtitle">
-          Tu punto de acceso centralizado a repositorios y aplicaciones.
+          Punto de acceso centralizado a repositorios y aplicaciones.
         </p>
 
         <div className="description-box">
           <p className="intro-text">
-            Bienvenido al portal unificado de LBC Consultores. Esta plataforma centraliza y agiliza el acceso a todas nuestras herramientas digitales.
+            Bienvenido al portal de datos de LBC Consultores. Esta plataforma centraliza y agiliza el acceso a datos y herramientas digitales.
           </p>
 
           <div className="home-section">
             <h4 className="section-title">📂 Repositorio de Datos</h4>
             <p className="section-description">
-              Accede a información clave para la elaboración de informes, incluyendo:
+              Accede a información para la elaboración de informes, incluyendo:
             </p>
             <ul className="data-list">
             <li><strong>Formaciones Vegetacionales:</strong> Basado en Gajardo (1994).</li>
@@ -32,7 +32,7 @@ const HomePanel = () => {
           <div className="home-section">
             <h4 className="section-title">🚀 Centro de Aplicaciones</h4>
             <p className="section-description">
-              Encuentra enlaces directos a nuestras aplicaciones externas más utilizadas, como las <strong>KWEN Apps</strong> (Fauna, Flora, Suelo) y las <strong>GEE Apps</strong>.
+              Encuentra los enlaces directos a nuestras aplicaciones, como las <strong>KWEN Apps</strong> (Fauna, Flora y Suelo) y las aplicaciones de Google Earth Engine <strong>(GEE Apps)</strong>.
             </p>
           </div>
         </div>
