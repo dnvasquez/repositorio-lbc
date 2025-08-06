@@ -1,4 +1,4 @@
-// dnvasquez/repositorio-lbc/repositorio-lbc-7473a9a983f39a5f94719ace67507adc1c8e8981/src/App.jsx
+// dnvasquez/repositorio-lbc/repositorio-lbc-ac3608d3abbf348a38d7de449da6e78542511611/src/App.jsx
 import React, { useState } from 'react';
 import ClimatePanel from './components/ClimatePanel';
 import VegetationPanel from './components/VegetationPanel';
@@ -33,7 +33,7 @@ const App = () => {
       <aside className="sidebar">
         <h2>Repositorio de datos</h2>
         <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
-        <h2>Sección informe</h2>
+        
         <select
           value={view}
           onChange={(e) => {
