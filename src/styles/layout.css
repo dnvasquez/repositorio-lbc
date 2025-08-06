@@ -68,6 +68,7 @@ body {
   margin: 1rem 0;
 }
 
+/* Estilo para los enlaces externos */
 .sidebar-link {
   background: transparent;
   border: 1px solid rgba(255,255,255,.08);
@@ -84,6 +85,31 @@ body {
 
 .sidebar-link:hover {
   background: var(--sidebar-hover);
+}
+
+/* Contenedor para la nueva sección */
+.sidebar-section {
+  background-color: var(--sidebar-hover);
+  border-radius: 0.5rem; /* 8px */
+  padding: 0.5rem 1rem 1rem 1rem;
+  margin-top: -0.5rem;
+}
+
+/* Título dentro del nuevo contenedor */
+.sidebar-section h2 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Enlaces dentro del nuevo contenedor */
+.sidebar-section .sidebar-link {
+  font-size: 0.85rem; /* Letra más pequeña */
+  padding: 0.6rem 0.9rem; /* Menos padding */
+  border: none; /* Sin borde */
+}
+
+.sidebar-section .sidebar-link:hover {
+  background: #2b3a4e; /* Un color ligeramente más claro para el hover */
 }
 
 .content {
