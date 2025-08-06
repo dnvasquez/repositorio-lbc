@@ -33,7 +33,7 @@ const App = () => {
       <aside className="sidebar">
         <h2>Repositorio de datos</h2>
         <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
-        
+        <h2>Sección informe</h2>
         <select
           value={view}
           onChange={(e) => {
@@ -43,7 +43,7 @@ const App = () => {
           }}
           className={`sidebar-select ${view !== 'home' ? 'active' : ''}`}
         >
-          <option value="home" disabled>Selecciona una categoría...</option>
+          <option value="home" disabled>Selecciona una sección</option>
           <option value="vegetation">Formaciones Vegetacionales</option>
           <option value="climate">Regiones Climáticas</option>
           <option value="agroclimatic">Zonas Agroclimáticas</option>
