@@ -1,4 +1,3 @@
-// dnvasquez/repositorio-lbc/repositorio-lbc-ac3608d3abbf348a38d7de449da6e78542511611/src/components/HomePanel.jsx
 import React from 'react';
 import '../styles/home.css';
 
@@ -12,27 +11,30 @@ const HomePanel = () => {
         </p>
 
         <div className="description-box">
-          <p className="description-text">
-            Bienvenido al portal unificado de LBC Consultores. Esta plataforma ha sido diseñada para centralizar y agilizar el acceso a todas nuestras herramientas digitales, reuniendo en un solo lugar la información para informes y las aplicaciones de uso frecuente.
+          <p className="intro-text">
+            Bienvenido al portal unificado de LBC Consultores. Esta plataforma centraliza y agiliza el acceso a todas nuestras herramientas digitales.
           </p>
-          <p className="description-text">
-            Utiliza el menú lateral para navegar por las dos áreas principales:
-          </p>
-          <ul>
-            <li>
-              <strong>Repositorio de Datos:</strong> Accede a información clave para la elaboración de informes, incluyendo:
-              <ul>
+
+          <div className="home-section">
+            <h4 className="section-title">📂 Repositorio de Datos</h4>
+            <p className="section-description">
+              Accede a información clave para la elaboración de informes, incluyendo:
+            </p>
+            <ul className="data-list">
             <li><strong>Formaciones Vegetacionales:</strong> Basado en Gajardo (1994).</li>
             <li><strong>Regiones Climáticas:</strong> Basado en Sarricolea et al. (2017).</li>
             <li><strong>Zonas Agroclimáticas:</strong> Basado en Santibañez et al. (2008).</li>
             <li><strong>Zonas Edáficas:</strong> Basado en Luzio (2009).</li>
             <li><strong>Macrozonas y subzonas Paisajísticas:</strong> Basado en MEC Consultores (2018).</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Centro de Aplicaciones:</strong> Encuentra enlaces directos a nuestras aplicaciones externas, como las <strong>KWEN Apps</strong> (Fauna, Flora, Suelo) y las <strong>GEE Apps</strong>.
-            </li>
-          </ul>
+            </ul>
+          </div>
+
+          <div className="home-section">
+            <h4 className="section-title">🚀 Centro de Aplicaciones</h4>
+            <p className="section-description">
+              Encuentra enlaces directos a nuestras aplicaciones externas más utilizadas, como las <strong>KWEN Apps</strong> (Fauna, Flora, Suelo) y las <strong>GEE Apps</strong>.
+            </p>
+          </div>
         </div>
         
         <div className="footer">
