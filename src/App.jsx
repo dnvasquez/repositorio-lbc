@@ -34,6 +34,8 @@ const App = () => {
         <h2>Repositorio de datos</h2>
         <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}>Inicio</button>
         
+        <h2>Sección de informe</h2>
+        
         <select
           value={view}
           onChange={(e) => {
@@ -50,7 +52,8 @@ const App = () => {
           <option value="edaphic">Zonas Edáficas</option>
           <option value="macrozona">Macrozonas Paisajísticas</option>
         </select>
-        
+
+        <h2>Enlaces externos</h2>
        
         <div className="sidebar-section">
           <h2>KWEN Apps</h2>
