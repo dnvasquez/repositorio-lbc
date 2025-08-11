@@ -87,9 +87,9 @@ const App = () => {
         <h4>GEE Apps</h4>
         <select onChange={handleExternalLink} className="sidebar-select">
           <option value="">Seleccionar...</option>
-          <option value="https://ee-dnvasque.projects.earthengine.app/view/dem-app">DEM</option>
+          <option value="https://ee-dnvasque.projects.earthengine.app/view/dem-app">Imagen DEM</option>
           <option value="https://ee-dnvasque.projects.earthengine.app/view/rgbimage-app">Imagen RGB</option>
-          <option value="https://ee-dnvasque.projects.earthengine.app/view/lcc-app2">LCC</option>
+          <option value="https://ee-dnvasque.projects.earthengine.app/view/lcc-app2">Clasificación Supervisada</option>
           <option value="https://ee-dnvasque.projects.earthengine.app/view/iv-app">Índices de Vegetación</option>
           <option value="https://ee-dnvasque.projects.earthengine.app/view/e-agrologico">Series de suelo</option>
         </select>
