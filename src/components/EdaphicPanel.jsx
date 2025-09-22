@@ -74,18 +74,18 @@ const EdaphicPanel = () => {
             }
         },
         "4": {
-            name: "Zona Mediterránea Húmeda",
-            subzones: {
-                "4.1": {
-                    name: "Sector Údico y Mésico",
-                    description: ""
-                },
-                "4.2": {
-                    name: "Sector Údico – Isomésico",
-                    description: ""
-                }
-            }
+    name: "Zona Mediterránea Húmeda",
+    subzones: {
+        "4.1": {
+            name: "Sector Údico–Mésico",
+            description: "El área del proyecto está inserta en la zona clasificada como Suelos de la Zona Mediterránea Húmeda de Chile. Según Luzio (2010), este sector se ubica en el tramo norte de la zona, con un régimen údico–mésico que combina disponibilidad hídrica adecuada y amplitud térmica marcada. Los suelos se desarrollan a partir de materiales volcánicos y depósitos aluviales, predominando los Andisols y Mollisols en sectores planos y la Depresión Intermedia. Son generalmente profundos, de texturas medias a finas y con buena estructura, lo que les otorga buena aptitud agrícola. En contraposición, en áreas de pendiente, como la Precordillera y la Cordillera de la Costa, aparecen suelos más delgados o meteorizados, con limitaciones por erosión y baja fertilidad, destinados principalmente a uso forestal. La aptitud agrícola varía desde Clases II–III en valles y terrazas hasta Clases VI–VIII en laderas con fuertes pendientes."
         },
+        "4.2": {
+            name: "Sector Údico–Isomésico",
+            description: "El área del proyecto está inserta en la zona clasificada como Suelos de la Zona Mediterránea Húmeda de Chile. Según Luzio (2010), este sector corresponde al tramo sur de la zona, caracterizado por un régimen údico–isomésico con temperaturas más uniformes a lo largo del año. Los suelos se forman sobre materiales volcánicos, glaciares y aluviales, predominando los Andisols en la Depresión Intermedia, con buena estructura y fertilidad, aptos para agricultura intensiva. También se desarrollan suelos con drenaje deficiente, conocidos como ñadis, que presentan limitaciones para el cultivo. En laderas y cordones montañosos son comunes los Inceptisols y Ultisols, con mayor acidez, menor fertilidad y susceptibilidad a la erosión, lo que restringe su uso a actividades forestales o de conservación. La aptitud agrícola varía desde Clases II–III en sectores bien drenados hasta Clases VI–VIII en áreas con pendiente o drenaje deficiente."
+        }
+    }
+},
         "5": {
             name: "Zona Húmeda",
             subzones: {
